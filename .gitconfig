@@ -1,0 +1,14 @@
+[user]
+	name = olegdayo
+	email = ol-sidorenkov@mail.ru
+
+[core]
+	autocrlf = input
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[init]
+	defaultbranch = master
+
