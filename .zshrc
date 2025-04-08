@@ -29,7 +29,7 @@ GOPATH="${HOME}/go"; export GOPATH;
 GOROOT="/usr/local/go"; export GOROOT;
 GOBIN="${GOPATH}/bin"; export GOBIN;
 GO111MODULE="on"; export GO111MODULE;
-PATH="${PATH}:${GOPATH}:${GOROOT}:${GOBIN}"; export PATH;
+PATH="${PATH}:${GOPATH}:${GOROOT}:${GOROOT}/bin:${GOBIN}"; export PATH;
 
 CARGO_HOME="${HOME}/.cargo"; export CARGO_HOME;
 CARGO="${HOME}/.cargo/bin/cargo"; export CARGO;
