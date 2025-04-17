@@ -14,6 +14,21 @@ config.keys = {
         mods = 'CTRL',
         action = wezterm.action.SplitVertical,
     },
+    {
+        key = 'w',
+        mods = 'CTRL',
+        action = wezterm.action.CloseCurrentTab{confirm=true},
+    },
+    {
+        key = 't',
+        mods = 'CTRL',
+        action = wezterm.action.SpawnTab 'CurrentPaneDomain',
+    },
+    {
+        key = 'w',
+        mods = 'CTRL',
+        action = wezterm.action.CloseCurrentTab{confirm=true},
+    },
 }
 
 return config
