@@ -29,6 +29,14 @@ config.keys = {
         mods = 'CTRL',
         action = wezterm.action.CloseCurrentTab{confirm=true},
     },
+    {
+        key = 'Backspace',
+        mods = 'CTRL',
+        action = wezterm.action.SendKey {
+            key = 'Backspace',
+            mods = 'ALT',
+        },
+    },
 }
 
 return config
