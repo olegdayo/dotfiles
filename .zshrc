@@ -2,7 +2,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 export PATH=$(brew --prefix)/opt/llvm/bin:$PATH
 export LDFLAGS="-L$(brew --prefix)/opt/llvm/lib"
 export CPPFLAGS="-I$(brew --prefix)/opt/llvm/include"
@@ -23,7 +22,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ${HOME}/.p10k.zsh ]] || source ${HOME}/.p10k.zsh
 
 source ${HOME}/.docker/init-zsh.sh || true # Added by Docker Desktop
-
 
 GOPATH="${HOME}/go"; export GOPATH;
 GOROOT="/usr/local/go"; export GOROOT;
