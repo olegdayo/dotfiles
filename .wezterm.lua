@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 config.scrollback_lines = 100000
-config.font_size = 9
+config.font_size = 13
 config.keys = {
     {
       key = '\\',
@@ -12,6 +12,16 @@ config.keys = {
     {
         key = '/',
         mods = 'CTRL',
+        action = wezterm.action.SplitVertical,
+    },
+    {
+      key = '\\',
+      mods = 'SUPER',
+      action = wezterm.action.SplitHorizontal,
+    },
+    {
+        key = '/',
+        mods = 'SUPER',
         action = wezterm.action.SplitVertical,
     },
     {
