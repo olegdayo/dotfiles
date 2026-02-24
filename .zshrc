@@ -49,6 +49,8 @@ PATH="${PATH}:${HOME}/.local/bin"; export PATH;
 
 PATH="${PATH}:/usr/local/protobuf/bin"; export PATH;
 
+alias k='kubectl';
+
 if [ -f $(brew --prefix)/etc/zsh_completion ]; then
 . $(brew --prefix)/etc/zsh_completion
 fi
