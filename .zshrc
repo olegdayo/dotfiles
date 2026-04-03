@@ -1,14 +1,14 @@
-CHARACTER="rher"
+CHARACTER=$(ls ${HOME}/characters | shuf -n 1)
 case $TERM_PROGRAM in
     iTerm.app)
-        chafa ~/characters/${CHARACTER}.png -f iterm
+        chafa ${HOME}/characters/${CHARACTER} -f iterm
     ;;
 
     vscode)
     ;;
 
     *)
-      chafa ~/characters/${CHARACTER}.png
+      chafa ${HOME}/characters/${CHARACTER}
     ;;
 esac
 
