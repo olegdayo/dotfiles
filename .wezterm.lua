@@ -47,6 +47,22 @@ config.keys = {
             mods = 'ALT',
         },
     },
+    {
+        key = 'LeftArrow',
+        mods = 'ALT',
+        action = wezterm.action.SendKey {
+            key = 'LeftArrow',
+            mods = 'CTRL',
+        },
+    },
+    {
+        key = 'RightArrow',
+        mods = 'ALT',
+        action = wezterm.action.SendKey {
+            key = 'RightArrow',
+            mods = 'CTRL',
+        },
+    },
 }
 
 return config
